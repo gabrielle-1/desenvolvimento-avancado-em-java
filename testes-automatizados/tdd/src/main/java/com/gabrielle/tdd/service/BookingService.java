@@ -1,4 +1,4 @@
-package com.gabrielle.tdd;
+package com.gabrielle.tdd.service;
 
 import com.gabrielle.tdd.model.BookingModel;
 import com.gabrielle.tdd.repository.BookingRepository;

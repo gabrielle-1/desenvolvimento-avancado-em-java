@@ -1,7 +1,9 @@
 package com.gabrielle.tdd;
 
 import com.gabrielle.tdd.model.BookingModel;
+import com.gabrielle.tdd.model.PersonModel;
 import com.gabrielle.tdd.repository.BookingRepository;
+import com.gabrielle.tdd.service.BookingService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,9 +20,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 public class BookingServiceTest {
 
-    // Classe de configuração com método que retorna o bookingService
-    // com a anotação @Bean criando o ponto de injeção no teste.
-    // @TestConfiguration Anotação de que é um Bean apenas para testes.
+    // Class to return a instance of BookingService
     @TestConfiguration
     static class BookingServiceTestConfiguration{
         @Bean
@@ -42,16 +42,14 @@ public class BookingServiceTest {
         Assertions.assertEquals(days, 10);
     }
 
+    // BookingRepository method simulation returning a BookingModel
     @BeforeEach
     public void setup(){
-        // Preparar o repository através de um Mock
-        // Quando o repository for chamado, retorne tal coisa que será o bookingModel.
-
         LocalDate checkIn = LocalDate.parse("2022-11-10");
         LocalDate checkOut = LocalDate.parse("2022-11-20");
-        BookingModel bookingModel = new BookingModel("1", "Gabrielle", checkIn, checkOut, 2);
+        PersonModel personModel = new PersonModel(1l, "Gabrielle", 21);
+        BookingModel bookingModel = new BookingModel(1l, personModel.getName(), checkIn, checkOut, 2);
 
-        // Simulando para que: Quando precisar de uma instancia de BookingRepository, retornar o BookingModel
         Mockito.when(bookingRepository.findByReserveName(bookingModel.getReserveName()))
                 .thenReturn(Optional.of(bookingModel));
     }

@@ -9,13 +9,13 @@ import java.time.LocalDate;
  * @throws Exception lancada
  */
 public class BookingModel {
-  private String id;
+  private Long id;
   private String reserveName;
   private LocalDate checkIn;
   private LocalDate checkOut;
   private int numberGuests;
 
-  public BookingModel(String id, String reserveName, LocalDate checkIn,
+  public BookingModel(Long id, String reserveName, LocalDate checkIn,
       LocalDate checkOut, int numberGuests) {
     this.id = id;
     this.reserveName = reserveName;
@@ -24,12 +24,8 @@ public class BookingModel {
     this.numberGuests = numberGuests;
   }
 
-  public String getId() {
+  public Long getId() {
     return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
   }
 
   public String getReserveName() {

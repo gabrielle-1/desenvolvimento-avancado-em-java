@@ -11,6 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+/*
+  This class was developed by teacher Leuson Mario
+ */
+
 @TestInstance(Lifecycle.PER_CLASS)
 public class NewPageTest {
 

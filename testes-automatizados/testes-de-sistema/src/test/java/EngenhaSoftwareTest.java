@@ -53,12 +53,11 @@ public class EngenhaSoftwareTest {
     }
 
     @Test
-    public void tooltipTitleTest(){
+    public void clickGoToLinkedInTest(){
         webDriver.get("https://github.com/gabrielle-1");
         Actions actions = new Actions(webDriver);
-
-        WebElement botaoGe = webDriver.findElement(By.xpath("/html/body/div[4]/main/div[1]/div/div/div[2]/div/nav/a[5]"));
-        actions.moveToElement(botaoGe).perform();
-        Assertions.assertEquals("esporte", botaoGe.getAttribute("title"));
+        WebElement botaoRep = webDriver.findElement(By.xpath("//*[@id=\"user-profile-frame\"]/div/div[1]/div/article/div[3]/a[2]"));
+        botaoRep.click();
+        Assertions.assertEquals("https://www.linkedin.com/in/gabrielle-1?original_referer=https%3A%2F%2Fgithub.com%2F", webDriver.getCurrentUrl());
     }
 }

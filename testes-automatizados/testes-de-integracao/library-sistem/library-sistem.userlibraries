@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: org.junit.jupiter:junit-jupiter:5.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar" />
+  </library>
+  <library name="Maven: org.opentest4j:opentest4j:1.2.0">
+    <archive path="/home/leusonmario/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar" />
+  </library>
+  <library name="Maven: org.junit.platform:junit-platform-commons:1.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar" />
+  </library>
+  <library name="Maven: org.apiguardian:apiguardian-api:1.1.2">
+    <archive path="/home/leusonmario/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.1/junit-jupiter-params-5.9.1.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar" />
+  </library>
+  <library name="Maven: org.junit.platform:junit-platform-engine:1.9.1">
+    <archive path="/home/leusonmario/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar" />
+  </library>
+  <library name="groovy-2.4.16 (2)">
+    <archive path="/usr/share/groovy/lib/ant.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-docgenerator.jar" />
+    <archive path="/usr/share/groovy/lib/testng.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-xml.jar" />
+    <archive path="/usr/share/groovy/lib/gpars.jar" />
+    <archive path="/usr/share/groovy/lib/asm-util.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-groovysh.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-test.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-nio.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-sql.jar" />
+    <archive path="/usr/share/groovy/lib/ant-launcher.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-testng.jar" />
+    <archive path="/usr/share/groovy/lib/antlr.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-templates.jar" />
+    <archive path="/usr/share/groovy/lib/xstream.jar" />
+    <archive path="/usr/share/groovy/lib/ant-antlr.jar" />
+    <archive path="/usr/share/groovy/lib/asm-commons.jar" />
+    <archive path="/usr/share/groovy/lib/qdox.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-groovydoc.jar" />
+    <archive path="/usr/share/groovy/lib/jansi.jar" />
+    <archive path="/usr/share/groovy/lib/jsr166y.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-servlet.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-console.jar" />
+    <archive path="/usr/share/groovy/lib/bsf.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-bsf.jar" />
+    <archive path="/usr/share/groovy/lib/servlet-api-3.1.jar" />
+    <archive path="/usr/share/groovy/lib/commons-logging.jar" />
+    <archive path="/usr/share/groovy/lib/ant-junit.jar" />
+    <archive path="/usr/share/groovy/lib/ivy.jar" />
+    <archive path="/usr/share/groovy/lib/asm-tree.jar" />
+    <archive path="/usr/share/groovy/lib/asm.jar" />
+    <archive path="/usr/share/groovy/lib/junit4.jar" />
+    <archive path="/usr/share/groovy/lib/jsp-api-2.3.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-jmx.jar" />
+    <archive path="/usr/share/groovy/lib/commons-cli.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-2.4.16.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-jsr223.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-json.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-swing.jar" />
+    <archive path="/usr/share/groovy/lib/hamcrest-core.jar" />
+    <archive path="/usr/share/groovy/lib/asm-analysis.jar" />
+    <archive path="/usr/share/groovy/lib/groovy-ant.jar" />
+    <archive path="/usr/share/groovy/lib/jline2.jar" />
+    <archive path="/usr/share/groovy/lib/jcommander.jar" />
+  </library>
+</eclipse-userlibraries>
+

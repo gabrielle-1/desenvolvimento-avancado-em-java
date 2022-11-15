@@ -1,15 +1,26 @@
 import book.Livro;
+import book.LivroFisico;
+import emp.Emprestimo;
+import ger.GerenciaEmprestimo;
+import ger.GerenciaLivros;
 import ger.GerenciaUsuario;
+import ger.exceptions.EmprestimoNaoEncontradoException;
+import ger.exceptions.LivroNaoEncontradoException;
 import ger.exceptions.UsuarioNaoEncontradoException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import user.Usuario;
+
+import java.util.ArrayList;
+import java.util.Date;
 
 public class LocaInLocoTest {
 
   Usuario usuario;
   GerenciaUsuario gerenciaUsuario;
+  GerenciaEmprestimo gerenciaEmprestimo;
   Livro livro;
 
   @BeforeEach
@@ -57,6 +68,33 @@ public class LocaInLocoTest {
     Assertions.assertEquals(
             "Usuário não disponível. Por favor, verifique o código informado", throwable.getMessage());
   }
+
+  @Test
+  public void esperaFazerEmprestimoLivro(){
+    GerenciaEmprestimo gerenciaEmprestimo = Mockito.mock(GerenciaEmprestimo.class);
+    gerenciaEmprestimo.adicionarEmprestimo(usuario, livro);
+    Mockito.verify(gerenciaEmprestimo).adicionarEmprestimo(usuario, livro);
+  }
+
+  @Test
+  public void esperaAumentoTamanhoEmprestimosAoFazerEmprestimoLivro(){
+    GerenciaEmprestimo gerenciaEmprestimo = Mockito.mock(GerenciaEmprestimo.class);
+    gerenciaEmprestimo.adicionarEmprestimo(usuario, livro);
+
+    Mockito.when(gerenciaEmprestimo.getSizeEmprestimos()).thenReturn(1);
+    Assertions.assertEquals(1, gerenciaEmprestimo.getSizeEmprestimos());
+  }
+
+  @Test
+  public void esperaInserirLivroNoSistema() throws LivroNaoEncontradoException {
+    GerenciaLivros gerenciaLivros = Mockito.mock(GerenciaLivros.class);
+    gerenciaLivros.adicionarNovoLivroFisico("Sem fraude nem favor", "Jurandir Freire Costa",
+            "1", "85-325-0925-8", 221);
+    Mockito.verify(gerenciaLivros).adicionarNovoLivroFisico("Sem fraude nem favor", "Jurandir Freire Costa",
+            "1", "85-325-0925-8", 221);
+  }
+
+
 
 
 

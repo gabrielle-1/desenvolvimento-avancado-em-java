@@ -22,6 +22,10 @@ public class GerenciaEmprestimo {
     return this.emprestimos;
   }
 
+  public int getSizeEmprestimos(){
+    return 0;
+  }
+
   public void adicionarEmprestimo(Usuario usuario, Livro livro){
     if (!usuarioComEmprestimoAtivo(usuario.getIdUsuario())){
       this.emprestimos.add(new Emprestimo(livro.getIdLivro(), usuario.getIdUsuario(), Calendar.getInstance().getTime()));
